@@ -4,7 +4,7 @@
 import UIKit
 
 /// StackView with vertical axis
-open class VerticalStackView: UIStackView {
+open class VStackView: UIStackView {
     open init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
         super.init(frame: .zero)
         axis = .vertical
@@ -17,7 +17,7 @@ open class VerticalStackView: UIStackView {
 }
 
 /// StackView with horizontal axis
-open class HorizontalStackView: UIStackView {
+open class HStackView: UIStackView {
     open init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
         super.init(frame: .zero)
         axis = .horizontal

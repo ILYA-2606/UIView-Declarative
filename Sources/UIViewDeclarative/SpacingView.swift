@@ -3,7 +3,8 @@
 
 import UIKit
 
-public final class VerticalSpacingView: UIView {
+/// Empty view with vertical spacing
+public final class VSpacingView: UIView {
     private var heightConstraint: NSLayoutConstraint?
     
     public init(spacing: CGFloat? = nil) {
@@ -23,7 +24,8 @@ public final class VerticalSpacingView: UIView {
     required init?(coder: NSCoder) { nil }
 }
 
-public final class HorizontalSpacingView: UIView {
+/// Empty view with horizontal spacing
+public final class HSpacingView: UIView {
     private var widthConstraint: NSLayoutConstraint?
     
     public init(spacing: CGFloat? = nil) {
