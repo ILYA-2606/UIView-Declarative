@@ -4,8 +4,8 @@
 import UIKit
 
 /// StackView with vertical axis
-open class VStackView: UIStackView {
-    open init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
+public class VStackView: UIStackView {
+    public init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
         super.init(frame: .zero)
         axis = .vertical
         self.spacing = spacing
@@ -13,12 +13,12 @@ open class VStackView: UIStackView {
         self.distribution = distribution
     }
 
-    required init(coder: NSCoder) { super.init(coder: coder) }
+    required public init(coder: NSCoder) { super.init(coder: coder) }
 }
 
 /// StackView with horizontal axis
-open class HStackView: UIStackView {
-    open init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
+public class HStackView: UIStackView {
+    public init(spacing: CGFloat = 0, alignment: Alignment = .fill, distribution: Distribution = .fill) {
         super.init(frame: .zero)
         axis = .horizontal
         self.spacing = spacing
@@ -26,5 +26,5 @@ open class HStackView: UIStackView {
         self.distribution = distribution
     }
 
-    required init(coder: NSCoder) { super.init(coder: coder) }
+    required public init(coder: NSCoder) { super.init(coder: coder) }
 }

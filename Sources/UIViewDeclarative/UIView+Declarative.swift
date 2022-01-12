@@ -1,7 +1,7 @@
 // UIView+Add.swift
 // Copyright © Darkness Production. All rights reserved.
 
-import Foundation
+import UIKit
 
 /// Builder for adding child views in hierarchical form
 @resultBuilder public struct AddViewBuilder {
@@ -37,7 +37,7 @@ public extension UIView {
     /// Inserts one view by index
     /// - Parameter index: Index of view insertion
     /// - Parameter block: A block that returns the view
-    @discardableResult public func insert(at index: Int, block: () -> (UIView)) -> UIView {
+    @discardableResult func insert(at index: Int, block: () -> (UIView)) -> UIView {
         if let stackView = self as? UIStackView {
             stackView.insertArrangedSubview(block(), at: index)
         } else {
@@ -49,7 +49,7 @@ public extension UIView {
     /// Add one view and add constraints to it, according to the insets
     /// - Parameter insets: Insets of the child view
     /// - Parameter block: A block that returns the view
-    @discardableResult public func add(insets: UIEdgeInsets, block: () -> (UIView)) -> UIView {
+    @discardableResult func add(insets: UIEdgeInsets, block: () -> (UIView)) -> UIView {
         let view = block()
         add { view }
         view.translatesAutoresizingMaskIntoConstraints = false
