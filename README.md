@@ -20,7 +20,7 @@ view.add(insets: .zero) {
 }
 ```
 
-Use it with [PreviewUIKit](https://github.com/ILYA2606/UIPreview) and [Then](https://github.com/devxoul/Then)
+Use it with [PreviewUIKit](https://github.com/ILYA-2606/UIPreview) and [Then](https://github.com/devxoul/Then)
 
 ## Installation
 
@@ -32,7 +32,7 @@ Use it with [PreviewUIKit](https://github.com/ILYA2606/UIPreview) and [Then](htt
     let package = Package(
       name: "MyAwesomeApp",
       dependencies: [
-        .Package(url: "https://github.com/ILYA2606/UIView-Declarative", majorVersion: 1),
+        .Package(url: "https://github.com/ILYA-2606/UIView-Declarative", majorVersion: 1),
       ]
     )
     ```
